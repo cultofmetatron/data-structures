@@ -53,6 +53,7 @@ void list_get_data_at_index(linked_list *alist,
     }  
     int *foo = anode->data;
     printf("data in func : %d\n", *foo);
+    //segfault starts here!!
     //*data =(void *) malloc(sizeof(datasize));
     //memcpy(*data, foo, sizeof(datasize));
     //printf("data in data: %d\n", (int) data);
