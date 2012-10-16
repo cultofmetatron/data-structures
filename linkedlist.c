@@ -45,7 +45,7 @@ void list_append(linked_list *list , void *item){
 }
 
 void list_get_data_at_index(linked_list *alist, 
-                            int index, void **data , int datasize ) {
+                            int index, void **data , size_t datasize ) {
    int size = alist->size;
    if (index <= size && index >=1) {
     int i;
@@ -58,8 +58,8 @@ void list_get_data_at_index(linked_list *alist,
     int *foo = anode->data;
     printf("data in func : %d\n", *foo);
     //segfault starts here!!
-    //*data =(void *) malloc(sizeof(datasize));
-    //memcpy(*data, foo, sizeof(datasize));
+    //*data =(void *) malloc(datasize);
+    //memcpy(*data, foo, datasize);
     //**data = *foo;
     //printf("data in data: %d\n", gomba);
    }

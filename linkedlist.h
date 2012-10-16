@@ -23,6 +23,6 @@ typedef struct node_head {
 /* useful functions */
 linked_list *list_new();
 void list_append(linked_list *list, void *item);
-void list_get_data_at_index(linked_list *alist, int index, void **data , int datasize);
+void list_get_data_at_index(linked_list *alist, int index, void **data , size_t datasize);
 int list_empty(linked_list *list);
 

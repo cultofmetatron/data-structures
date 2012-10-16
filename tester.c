@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     }
     
     int *foo;
-    list_get_data_at_index(mylist, 8, (void *) &foo, sizeof(int));
+    list_get_data_at_index(mylist, 8, (void *) &foo, sizeof(size_t));
     //int goo = *foo;
     //printf("number at index 8 %d\n \n", *foo);
     
