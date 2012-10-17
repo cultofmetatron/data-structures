@@ -31,13 +31,13 @@ void list_append(linked_list *list , void *item){
      * head and tail to the same node*/
     new_node->previous = NULL;
     new_node->next = NULL;
-    printf("address of empty_list new_node: %d\n", new_node);
+    printf("34:address of empty_list new_node: %d\n", new_node);
     list->head = new_node;
     list->tail = new_node; 
   } else {
     list_node *tail = list->tail;
     tail->next = new_node;
-    printf("address of list->head %d, tail: %d  new_node: %d\n",list->head ,tail, new_node);
+    printf("40:address of list->head %d, tail: %d  new_node: %d\n",list->head ,tail, new_node);
     new_node->previous =(void *)  tail;
     list->tail = new_node;
   }
@@ -45,7 +45,7 @@ void list_append(linked_list *list , void *item){
   size++;
   list->size = size;
   int *foo = (new_node->data);
-  printf("size is %d with data %d\n", list->size, *foo );
+  printf("48:size is %d with data %d\n", list->size, *foo );
 }
 
 void list_get_data_at_index(linked_list *alist, 
@@ -56,13 +56,13 @@ void list_get_data_at_index(linked_list *alist,
     list_node *anode = alist->head;
     for ( i = 1; i < index; i++) {
       int *honey =  anode->data;
-      printf("in list(),anode: %d, anode->next: %d  i = %d\n data: %d, location: %d\n",anode,  anode->next, i, *honey, honey); 
+      printf("59:in list(),anode: %d, anode->next: %d  i = %d\n data: %d, location: %d\n",anode,  anode->next, i, *honey, honey); 
       list_node *next = anode->next;
       anode = next;
-      printf("anode now: %d\n" , anode);
+      printf("62:anode now: %d\n" , anode);
     }  
     int *foo = anode->data;
-    printf("data in func : %d\n", *foo);
+    printf("65:data in func : %d\n", *foo);
     //segfault starts here!!
     //*data =(void *) malloc(datasize);
     //memcpy(*data, foo, datasize);

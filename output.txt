@@ -1,45 +1,45 @@
 testing the linked list file
-address of empty_list new_node: 32145488
-size is 1 with data 10
-address of list->head 32145488, tail: 32145488  new_node: 32145536
-size is 2 with data 9
-address of list->head 32145488, tail: 32145536  new_node: 32145584
-size is 3 with data 8
-address of list->head 32145488, tail: 32145584  new_node: 32145632
-size is 4 with data 7
-address of list->head 32145488, tail: 32145632  new_node: 32145680
-size is 5 with data 6
-address of list->head 32145488, tail: 32145680  new_node: 32145728
-size is 6 with data 5
-address of list->head 32145488, tail: 32145728  new_node: 32145776
-size is 7 with data 4
-address of list->head 32145488, tail: 32145776  new_node: 32145824
-size is 8 with data 3
-address of list->head 32145488, tail: 32145824  new_node: 32145872
-size is 9 with data 2
-address of list->head 32145488, tail: 32145872  new_node: 32145920
-size is 10 with data 1
-address of list->head 32145488, tail: 32145920  new_node: 32145968
-size is 11 with data 0
-in list(),anode: 32145488, anode->next: 32145536  i = 1
- data: 0, location: 2080505192
-anode now: 32145536
-in list(),anode: 32145536, anode->next: 32145584  i = 2
- data: 0, location: 2080505192
-anode now: 32145584
-in list(),anode: 32145584, anode->next: 32145632  i = 3
- data: 0, location: 2080505192
-anode now: 32145632
-in list(),anode: 32145632, anode->next: 32145680  i = 4
- data: 0, location: 2080505192
-anode now: 32145680
-in list(),anode: 32145680, anode->next: 32145728  i = 5
- data: 0, location: 2080505192
-anode now: 32145728
-in list(),anode: 32145728, anode->next: 32145776  i = 6
- data: 0, location: 2080505192
-anode now: 32145776
-in list(),anode: 32145776, anode->next: 32145824  i = 7
- data: 0, location: 2080505192
-anode now: 32145824
-data in func : 0
+34:address of empty_list new_node: 38060112
+48:size is 1 with data 10
+40:address of list->head 38060112, tail: 38060112  new_node: 38060160
+48:size is 2 with data 9
+40:address of list->head 38060112, tail: 38060160  new_node: 38060208
+48:size is 3 with data 8
+40:address of list->head 38060112, tail: 38060208  new_node: 38060256
+48:size is 4 with data 7
+40:address of list->head 38060112, tail: 38060256  new_node: 38060304
+48:size is 5 with data 6
+40:address of list->head 38060112, tail: 38060304  new_node: 38060352
+48:size is 6 with data 5
+40:address of list->head 38060112, tail: 38060352  new_node: 38060400
+48:size is 7 with data 4
+40:address of list->head 38060112, tail: 38060400  new_node: 38060448
+48:size is 8 with data 3
+40:address of list->head 38060112, tail: 38060448  new_node: 38060496
+48:size is 9 with data 2
+40:address of list->head 38060112, tail: 38060496  new_node: 38060544
+48:size is 10 with data 1
+40:address of list->head 38060112, tail: 38060544  new_node: 38060592
+48:size is 11 with data 0
+59:in list(),anode: 38060112, anode->next: 38060160  i = 1
+ data: 0, location: -1836652600
+62:anode now: 38060160
+59:in list(),anode: 38060160, anode->next: 38060208  i = 2
+ data: 0, location: -1836652600
+62:anode now: 38060208
+59:in list(),anode: 38060208, anode->next: 38060256  i = 3
+ data: 0, location: -1836652600
+62:anode now: 38060256
+59:in list(),anode: 38060256, anode->next: 38060304  i = 4
+ data: 0, location: -1836652600
+62:anode now: 38060304
+59:in list(),anode: 38060304, anode->next: 38060352  i = 5
+ data: 0, location: -1836652600
+62:anode now: 38060352
+59:in list(),anode: 38060352, anode->next: 38060400  i = 6
+ data: 0, location: -1836652600
+62:anode now: 38060400
+59:in list(),anode: 38060400, anode->next: 38060448  i = 7
+ data: 0, location: -1836652600
+62:anode now: 38060448
+65:data in func : 0
