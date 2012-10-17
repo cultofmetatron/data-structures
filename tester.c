@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
     linked_list *mylist = list_new();
     int i;
     for (i = 0; i <= 10; i++) {
-      int foo = i;
+      int foo = 10-i;
       int *goo = &foo;
       
       list_append(mylist, goo);

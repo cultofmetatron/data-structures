@@ -21,19 +21,23 @@ void list_append(linked_list *list , void *item){
              (list_node *) malloc(sizeof(list_node));
   new_node->data = item; /* created the node and 
                           threw the data into it */
+  /* set initial node properties */
   new_node->next = NULL;
   new_node->head = list;
-  
+
+
   if (list_empty(list) == 1) {
     /* list is empty so initialize the 
      * head and tail to the same node*/
     new_node->previous = NULL;
     new_node->next = NULL;
+    printf("address of empty_list new_node: %d\n", new_node);
     list->head = new_node;
     list->tail = new_node; 
   } else {
     list_node *tail = list->tail;
     tail->next = new_node;
+    printf("address of list->head %d, tail: %d  new_node: %d\n",list->head ,tail, new_node);
     new_node->previous =(void *)  tail;
     list->tail = new_node;
   }
@@ -52,8 +56,10 @@ void list_get_data_at_index(linked_list *alist,
     list_node *anode = alist->head;
     for ( i = 1; i < index; i++) {
       int *honey =  anode->data;
-      printf("in list(),  i = %d\n data: %d, location: %d\n", i, *honey, honey); 
-      anode = anode->next;
+      printf("in list(),anode: %d, anode->next: %d  i = %d\n data: %d, location: %d\n",anode,  anode->next, i, *honey, honey); 
+      list_node *next = anode->next;
+      anode = next;
+      printf("anode now: %d\n" , anode);
     }  
     int *foo = anode->data;
     printf("data in func : %d\n", *foo);
@@ -73,9 +79,11 @@ int list_size(linked_list *alist) {
 
 /* returns 1 if empty, 0 if not empty */
 int list_empty(linked_list *list) {
-  if (list->size == 0)
+  if (list->size == 0){
     return 1;
-  else
+  }
+  else {
     return 0;
+  }
 }
 
