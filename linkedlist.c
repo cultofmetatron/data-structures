@@ -56,7 +56,7 @@ void list_get_data_at_index(linked_list *alist,
     list_node *anode = alist->head;
     for ( i = 1; i < index; i++) {
       int *honey =  anode->data;
-      printf("59:in list(),anode: %d, anode->next: %d  i = %d\n data: %d, location: %d\n",anode,  anode->next, i, *honey, honey); 
+      printf("59:in list(),anode: %d,anode->data: %d, anode->next: %d  i = %d\n data: %d, location: %d\n",anode, anode->data , anode->next, i, *honey , honey); 
       list_node *next = anode->next;
       anode = next;
       printf("62:anode now: %d\n" , anode);
